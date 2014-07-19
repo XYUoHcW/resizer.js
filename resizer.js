@@ -1,3 +1,4 @@
+/*global $, window*/
 var resize = (function () {
     'use strict';
     var Methods = {
