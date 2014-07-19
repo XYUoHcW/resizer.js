@@ -1,3 +1,4 @@
+/*jslint browser: true*/
 /*global $, window*/
 var resize = (function () {
     'use strict';
@@ -75,7 +76,7 @@ var resize = (function () {
         } else {
             $holder = $image.closest(holder_selector);
         }
-        Methods.setInitialCssProperties($image, $holder, image_natural_height, image_natural_width, ratio);
+        Methods.setInitialCssProperties($image, $holder);
         if (continuous === undefined || continuous === true) {
             $(window).resize(function () {
                 resize($image, $holder, image_natural_height, image_natural_width, ratio);
